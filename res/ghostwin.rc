@@ -1,0 +1,28 @@
+#include <windows.h>
+
+1 ICON "ghostwin.ico"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "ghostwin.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 0,1,1,0
+PRODUCTVERSION 0,1,1,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "FileDescription", "GhostWin: see-through, click-through windows"
+      VALUE "FileVersion", "0.1.1"
+      VALUE "InternalName", "GhostWin"
+      VALUE "OriginalFilename", "GhostWin.exe"
+      VALUE "ProductName", "GhostWin"
+      VALUE "ProductVersion", "0.1.1"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END
